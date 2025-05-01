@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Miracle's Profile</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .profile {
+      background-color: white;
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #666;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile">
+    <img src="https://i.postimg.cc/RhDWw5Sm/IMG-20250327-WA0045.jpg" alt="Miracle's Photo">
+    <h1>Miracle Dada</h1>
+    <p>Aspiring web developer. Learning step-by-step to build amazing websites.</p>
+    <p>Contact me at: <a href="mailto:dolatoyosi@gmail.com">dolatoyosi@gmail.com</a></p>
+  </div class="profile">,
+  <button onclick="showmessage()">click me!</button>
+  <p id="message"></p>
+  <button onclick="changeBackground()">changeBackground</button>
+  <h2>my skills</h2>
+  <ul style="text-align: left;">
+    <li>web development (in progress)</li>
+    <li>Graphic Design</li>
+    <li>Team Leadership</li>
+    <li>Communication</li>
+    </ul>
+  <h2>say Hello</h2>
+  <input type="text" id="nameinput"
+  placeholder="Enter your name">
+  <button onclick="greetuser()">Greet Me</button>
+  <p id="greeting"></p>
+    <script>
+        function showmessage() {
+    document.getElementById("message") .innerHTML
+    = "welcome to my page! keep learning!";
+        }
+    </script>
+    <script>
+        function changeBackground() {
+          // Change background to a random color
+          const colors = ["#f0f8ff", "#ffe4e1", "#e6ffe6", "#fff0f5", "#fdfd96", "#d0f0c0"];
+          const randomColor = colors[Math.floor(Math.random() * colors.length)];
+          document.body.style.backgroundColor = randomColor;
+        }
+      </script>
+      <script>
+        function greetUser() {
+          const name = document.getElementById("nameInput").value;
+          const message = "Hello, " + name + "! Welcome to my page!";
+          document.getElementById("greeting").innerHTML = message;
+        }
+      </script>
+      
+      
+
+</body>
+</html>
